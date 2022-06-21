@@ -2,18 +2,18 @@ const AddressBook = require("../models/AddressBook");
 
 const data = [
   {
-    firstName: "Brian",
-    lastName: "Schmeling",
+    firstName: "John",
+    lastName: "Doe",
     address: {
-      street: "2 Woodlawn Rd",
-      city: "Rocky Point",
+      street: "2 Pine Rd",
+      city: "Melville",
       State: "NY",
       zipCode: 11778,
     },
     phone: {
-      cell: 6315061506,
+      cell: 6315551234,
     },
-    emailAddress: "BrianSchmeling2@gmail.com",
+    emailAddress: "johndoe@gmail.com",
   },
   {
     firstName: "Test",
