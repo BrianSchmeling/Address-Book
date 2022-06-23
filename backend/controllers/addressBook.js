@@ -21,9 +21,10 @@ router.post("/new", (req, res) => {
   AddressBook.create(req.body).then((address) => {
     res.json(address);
   });
+  // console.log("helllllllloooooooooo!!!!!");
 });
 
-router.put("/update/:firstName/:lastName", (req, res) => {
+router.put("/:firstName/:lastName", (req, res) => {
   AddressBook.findOneAndUpdate(
     { firstName: req.params.firstName, lastName: req.params.lastName },
     req.body,
@@ -33,7 +34,7 @@ router.put("/update/:firstName/:lastName", (req, res) => {
   });
 });
 
-router.delete("/delete/:firstName/:lastName", (req, res) => {
+router.delete("/:firstName/:lastName", (req, res) => {
   AddressBook.findOneAndDelete({
     firstName: req.params.firstName,
     lastName: req.params.lastName,

@@ -5,18 +5,14 @@ const AddressBookSchema = new Schema({
   firstName: String,
   lastName: String,
   companyName: String,
-  address: {
-    street: String,
-    city: String,
-    State: String,
-    zipCode: Number,
-  },
-  phone: {
-    home: Number,
-    cell: Number,
-    work: Number,
-    fax: Number,
-  },
+  street: String,
+  city: String,
+  state: String,
+  zipCode: Number,
+  home: Number,
+  cell: Number,
+  work: Number,
+  fax: Number,
   emailAddress: String,
 });
 
